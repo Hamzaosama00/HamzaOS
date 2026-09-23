@@ -28,3 +28,11 @@
 .auth-form label{display:grid;gap:8px;font-weight:800}.auth-form input{border:1px solid #d8d8d8;border-radius:16px;padding:14px 14px;font:inherit;background:#fafafa;color:#0b0b0b}
 .auth-footnote{font-size:12px;color:#666;line-height:1.5;margin:16px 0 0}
 .connected{background:#101010!important;color:#fff!important}
+
+/* Advanced Coach v3 */
+.coach-layout{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(260px,.75fr);gap:18px;align-items:start}
+.quick-actions{display:flex;gap:8px;flex-wrap:wrap;padding:12px 18px 0;background:#fff;border-top:1px solid #eee}
+.chip-btn{border:1px solid #dedede;background:#fff;color:#111;border-radius:999px;padding:8px 11px;font-size:10px;font-weight:800;cursor:pointer}
+.chip-btn:hover{background:#111;color:#fff;border-color:#111}.chip-btn:disabled{opacity:.55;cursor:not-allowed}
+.coach-intel{position:sticky;top:90px}.coach-intel h3{font-size:22px;margin:8px 0}.coach-intel p{font-size:12px;line-height:1.7;color:#777}.intel-grid{display:grid;grid-template-columns:1fr;gap:10px;margin:20px 0}.intel-grid div{border:1px solid #eee;border-radius:13px;padding:14px;background:#f8f8f7}.intel-grid span{display:block;color:#999;font-size:9px;font-weight:800;letter-spacing:.8px;text-transform:uppercase}.intel-grid strong{display:block;margin-top:7px;font-size:15px;line-height:1.35;color:#111}.missed-cats{display:flex;gap:7px;flex-wrap:wrap;margin:0 0 18px}.missed-cats span{border:1px solid #e0e0df;border-radius:999px;padding:7px 10px;font-size:10px;color:#666;background:#fff}
+@media(max-width:950px){.coach-layout{grid-template-columns:1fr}.coach-intel{position:static}.quick-actions{padding-bottom:4px}}

@@ -1,6 +1,6 @@
 # HAMZA OS — Production Edition
 
-Private personal self-improvement dashboard for Hamza: daily routine checklist, mood/energy check-ins, progress history, AI coach, and Ollama Cloud integration.
+Private personal self-improvement dashboard for Hamza: daily routine checklist, mood/energy check-ins, progress history, Advanced Slim-Fit Home Coach, and Ollama Cloud integration.
 
 ## What changed from starter
 
@@ -16,6 +16,7 @@ Private personal self-improvement dashboard for Hamza: daily routine checklist, 
 - Dockerfile + Docker Compose
 - Backup and password reset scripts
 - Automated backend tests
+- Advanced Coach v3: slim-fit home workout focus, no-equipment routine generation, coach insights, quick prompts, and smart challenge generator
 
 ## Quick local run
 
@@ -64,6 +65,13 @@ http://127.0.0.1:8000
 6. Do not commit `.env`, `data/`, `*.key`, `*.enc`, or `*.sqlite3` files.
 7. Revoke any Ollama API key that was pasted into chat or shared anywhere, then generate a fresh one and save it in the dashboard.
 
+
+## Advanced Coach v3
+
+This build is configured around Hamza's goal: a slim, fit, athletic body using home workouts. The coach can create fresh no-equipment routines, posture/core blocks, micro-challenges, recovery missions, and adaptive daily plans. It reads self-reported checklist history, sleep, mood, energy, and missed categories to choose the next focus.
+
+Safety boundaries are built into the system prompt: no restrictive dieting, no supplements, no heavy max-lift plans, no height-growth promises, and no punishment for missed tasks. Pain, dizziness, fainting or serious symptoms should stop exercise and involve a trusted adult/health professional.
+
 ## Ollama settings
 
 Default free-credit-friendly cloud model:
@@ -73,7 +81,7 @@ OLLAMA_BASE_URL=https://ollama.com
 OLLAMA_MODEL=gpt-oss:20b-cloud
 ```
 
-Why this default: `gpt-oss:20b-cloud` is a Low Usage cloud tag, while `gpt-oss:120b-cloud` is Medium Usage. The 20B model is a better first production default for daily routines, chat, and checklist planning. You can switch later by editing `OLLAMA_MODEL` in `.env`.
+Why this default: `gpt-oss:20b-cloud` is a Low Usage cloud tag, while `gpt-oss:120b-cloud` is Medium Usage. The 20B model is a better first production default for daily routines, advanced coach chat, smart challenges, and checklist planning. You can switch later by editing `OLLAMA_MODEL` in `.env`.
 
 Other free-credit cloud choices you mentioned:
 
